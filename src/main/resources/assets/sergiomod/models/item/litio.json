@@ -1,0 +1,11 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "sergiomod:item/litio  "
+  },
+
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sergiomod:item/litio"
+  }
+}
