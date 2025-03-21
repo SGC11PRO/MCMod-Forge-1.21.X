@@ -54,7 +54,11 @@ public class SergioMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(ModItems.LITIO); // Si se abre la pestaña de INGREDIENTES del modo creativo, se registra allí el item LITIO
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) // Si se abre la pestaña de INGREDIENTES del modo creativo, se registra allí el item LITIO
+        {
+            event.accept(ModItems.LITIO);
+            event.accept(ModItems.BATERIA);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

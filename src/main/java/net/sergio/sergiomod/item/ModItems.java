@@ -17,6 +17,9 @@ public class ModItems {
     public static final RegistryObject<Item> LITIO = ITEMS.register("litio", () ->
             new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> BATERIA = ITEMS.register("bateria", () ->
+            new Item(new Item.Properties()));
+
 
     // Registrar esta lista en Forge
     public static void register(IEventBus eventBus)
