@@ -1,5 +1,7 @@
 {
   "item.sergiomod.litio": "Lingote de Litio",
-  "item.sergiomod.bateria": "Batería"
+  "item.sergiomod.bateria": "Batería",
+
+  "block.sergiomod.bloque_litio": "Mineral de Litio"
 
 }

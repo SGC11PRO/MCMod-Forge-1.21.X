@@ -1,5 +1,7 @@
 {
   "item.sergiomod.litio": "Lithium Ingot",
-  "item.sergiomod.bateria": "Battery"
+  "item.sergiomod.bateria": "Battery",
+
+  "block.sergiomod.bloque_litio": "Lithium Ore"
 
 }
