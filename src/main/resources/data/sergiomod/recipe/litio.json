@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sergiomod:bloque_litio"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "sergiomod:litio"
+  }
+}
