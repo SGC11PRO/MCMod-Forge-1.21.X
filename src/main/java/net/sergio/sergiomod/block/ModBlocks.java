@@ -21,12 +21,20 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, SergioMod.MOD_ID);
 
     //Registrar un bloque
-    public static final RegistryObject<Block> BLOQUE_LITIO = registerBlock("bloque_litio",
+    public static final RegistryObject<Block> MINERAL_LITIO = registerBlock("mineral_litio",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(6f) // tiempo para romperse (Ref. Stone = 6f) (see https://mcreator.net/wiki/list-block-resistance-levels)
+                    .strength(4f) // tiempo para romperse (Ref. Stone = 4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
+    public static final RegistryObject<Block> BLOQUE_LITIO = registerBlock("bloque_litio",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.COPPER)));
+
+
+    // funciones automatizadas
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

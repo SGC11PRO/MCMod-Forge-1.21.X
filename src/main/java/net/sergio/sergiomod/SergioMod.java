@@ -6,7 +6,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -16,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sergio.sergiomod.block.ModBlocks;
+import net.sergio.sergiomod.item.ModCreativeModeTabs;
 import net.sergio.sergiomod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -40,6 +40,7 @@ public class SergioMod
         // Llama a la funcion register de ModItems / ModBlocks
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -66,6 +67,7 @@ public class SergioMod
         // Añadir items a la pestaña BUILDING_BLOCKS
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
         {
+            event.accept(ModBlocks.MINERAL_LITIO);
             event.accept(ModBlocks.BLOQUE_LITIO);
         }
     }

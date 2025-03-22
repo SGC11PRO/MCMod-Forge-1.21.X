@@ -2,6 +2,9 @@
   "item.sergiomod.litio": "Lingote de Litio",
   "item.sergiomod.bateria": "Batería",
 
-  "block.sergiomod.bloque_litio": "Mineral de Litio"
+  "block.sergiomod.mineral_litio": "Mineral de Litio",
+  "block.sergiomod.bloque_litio": "Bloque de Litio",
+
+  "creativetab.sergiomod.mining_expansion": "Expansión Minera"
 
 }

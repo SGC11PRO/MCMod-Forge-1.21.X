@@ -2,6 +2,9 @@
   "item.sergiomod.litio": "Lithium Ingot",
   "item.sergiomod.bateria": "Battery",
 
-  "block.sergiomod.bloque_litio": "Lithium Ore"
+  "block.sergiomod.mineral_litio": "Lithium Ore",
+  "block.sergiomod.bloque_litio": "Lithium Block",
+
+  "creativetab.sergiomod.mining_expansion": "Mining Expansion"
 
 }
