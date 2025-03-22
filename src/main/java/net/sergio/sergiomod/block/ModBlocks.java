@@ -1,8 +1,10 @@
 package net.sergio.sergiomod.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,7 +24,7 @@ public class ModBlocks {
 
     //Registrar un bloque
     public static final RegistryObject<Block> MINERAL_LITIO = registerBlock("mineral_litio",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(2,4), BlockBehaviour.Properties.of()
                     .strength(4f) // tiempo para romperse (Ref. Stone = 4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
